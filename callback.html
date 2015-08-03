@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<script src="LAB.js"></script>
+		<script>
+			$LAB.script('jquery-2.1.4.js').wait()
+			.script('abc.js').wait(function() {
+			   alert('Callback executado quando script abc carregar');   
+			}).script('def.js').wait(function() {
+			   alert('Callback executado quando script def carregar');   
+			}).script('ghi.js').wait(function() {
+			   alert('Callback executado quando script ghi carregar');   
+			});
+		</script>
+	</head>
+	<body>
+
+		<input id="principal" type="text" value="input">
+		
+	</body>
+</html>
